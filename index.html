@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Home</title>
+    <link rel="stylesheet" href="./style/login_page.css">
+    <style>
+      #myVideo {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 50vh;
+  z-index: -100;
+}
+.nav , .top>.box , .bottom>.box{
+  background-color: rgba(0, 0, 0, 0.6);
+  color: aliceblue;
+}
+body{
+  background-color: black;
+  color: aliceblue;
+}
+
+a:link {
+  color: red;
+}
+
+/* visited link */
+a:visited {
+  color: orange;
+}
+
+/* mouse over link */
+a:hover {
+  color: hotpink;
+}
+.nav:hover , .top>.box:hover , .bottom>.box :hover
+{
+  color: orange;
+}
+button{
+  background-color: black;
+}
+button:hover
+{
+  background-color: rgb(255, 144, 40);
+  color: black;
+}
+
+
+/* selected link */
+a:active {
+  color: blue;
+}
+    </style>
+  </head>
+  <body>
+    <div class="nav">
+      <div class="logo">
+        <p>🎶🎶🎶😎The  web Game PlatForm😎🎶🎶🎶</p>
+      </div>
+      <div class="right-links">
+        <a href="./edit.html">Change Profile</a>
+        <a href="logout.php"><button  class="btn" type="submit" name="submit">Log out</button></a>
+      </div>
+    </div>
+    <main>
+      <video autoplay muted loop id="myVideo">
+        <source src="/image/1052896394-preview.mp4" type="video/mp4">
+      </video>
+      <div class="main-box top">
+        <div class="top">
+          <div class="box">
+            <p>Hello <b>Ludiflex</b>,Welcome</p>
+          </div>
+          <div class="box">
+            <p>Your email is <b>123@gmail.com</b>.Welcome</p>
+          </div>
+          <div class="bottom">
+            <div class="box">
+              <p>And you are <b>20 years old</b></p>
+            </div>
+          </div>
+          <div class="box">
+            <a href="./Drum+Kit+Starting+Files/Drum Kit Starting Files/index.html">Drum kit Game</a>
+          </div>
+          <div  class="box">
+            <a href="./Dicee+Challenge+-+Starting+Files/dicee.html">Dicee Challenge</a>
+          </div>
+        </div>
+      </div>
+    </main> 
+  </body>
+</html>

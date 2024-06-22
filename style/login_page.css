@@ -1,0 +1,145 @@
+*
+{
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+
+body
+{
+  background-color: #e4e9f7;
+}
+.container
+{
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  height: 90vh;
+}
+
+.box
+{
+  background-color: #fdfdfd;
+  display: flex;
+  flex-direction: column;
+  padding: 2em;
+  margin:  2rem;
+  border-radius: 2rem;
+  border: 1px dashed black;
+  box-shadow: 10px 10px 5px black;
+  width: 450px;
+  margin: 0px 10px;
+}
+
+.form-box header
+{
+  font-size: 25px;
+  font-weight: 600;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #e6e6e6;
+  margin-bottom: 10px;
+}
+
+.form-box form .field
+{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+.form-box form .input input{
+  height: 40px;
+  width: 95%;
+  font-size: 16px;
+  padding: 0px 15px;
+  margin: 0px 0px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  outline: none;
+}
+
+.btn button,button
+{
+  height: 35px;
+  background-color: rgba(76, 68, 182, 0.808);
+  border: 0;
+  border-radius: 5px;
+  color: #ffff;
+  font-size: 15px;
+  cursor: pointer;
+  transition: all 0.3s;
+  margin-top: 10px;
+  padding: 0px 10px;
+}
+.btn:hover
+{
+  opacity: 100%;
+}
+
+.links
+{
+  margin-bottom: 15px;
+}
+
+
+/***********************Home***************************/
+.nav
+{
+  background-color: #ffff;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  line-height: 60px;
+  z-index: 100;
+}
+.logo
+{
+  font-size: 30px;
+  font-weight: 900;
+}
+.right-links a
+{
+  position: relative;
+  top: 20px;
+  padding: 0 10px;
+  font-size: 20px;
+  font-weight: 700;
+}
+main
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 60px;
+}
+
+.main-box .top
+{
+   display: flex;
+   flex-direction: column;
+   gap:20px;
+   justify-content: space-between;
+}
+.bottom
+{
+  width: 100%;
+  margin-top: 20px;
+}
+@media only screen and (max-width:840px)
+  {
+    .main-box .top
+     {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .top .box
+    {
+      margin: 10px;
+    }
+    .bottom
+    {
+      margin-top: 0;
+    }
+  }

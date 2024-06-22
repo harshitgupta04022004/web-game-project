@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <title>Change Profile</title>
+    <link rel="stylesheet" href="./style/login_page.css">
+    <style>
+        body {
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav {
+            background-color: #333;
+            color: #fff;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+        }
+
+        .logo p {
+            margin: 0;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .right-links a {
+            color: #fff;
+            text-decoration: none;
+            margin-left: 20px;
+        }
+
+        .btn {
+            background-color: #4CAF50;
+            color: #fff;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: calc(100vh - 60px);
+        }
+
+        .box {
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        header {
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .field {
+            margin-bottom: 15px;
+        }
+
+        label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="number"] {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-family: inherit;
+        }
+
+        .btn button {
+            width: 100%;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: #ffffff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-family: inherit;
+        }
+
+        .links {
+            text-align: center;
+            margin-top: 15px;
+        }
+
+        .links a {
+            color: #4CAF50;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <div class="logo">
+            <p>Logo</p>
+        </div>
+        <div class="right-links">
+            <a href="./loginPage.html">Sign Up</a>
+            <a href="./logout.html"><button class="btn" type="submit" name="submit">Log out</button></a>
+        </div>
+    </div>
+    <div class="container">
+        <div class="box form-box">
+            <header>Change Profile</header>
+            <form class="Login" method="post">
+                <div class="field input">
+                    <label for="username">Username</label>
+                    <input type="text" name="username" id="username" required autocomplete="off">
+                </div>
+                <div class="field input">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" required autocomplete="off">
+                </div>
+                <div class="field input">
+                    <label for="age">Age</label>
+                    <input type="number" id="age" name="age">
+                </div>
+                <div class="field btn">
+                    <button type="submit" name="submit">Submit</button>
+                </div>
+            </form>
+            <div class="links">
+                Already a member? <a href="./loginPage.html">Sign In</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
